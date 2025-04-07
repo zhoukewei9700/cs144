@@ -6,7 +6,7 @@ ARG EMAIL=505977910@qq.com
 ENV TZ=Asia/Shanghai \
     DEBIAN_FRONTEND=noninteractive
 
-RUN echo 'root:123456' | chpasswd \
+RUN echo 'root:Zkw0907genius' | chpasswd \
     && apt-get update -y \
     && apt-get install -y sudo vim wget git fish \
     && apt-get clean -y \
@@ -14,7 +14,7 @@ RUN echo 'root:123456' | chpasswd \
     && useradd -ms /bin/fish ${USR} \
     && usermod -aG sudo root \
     && usermod -aG sudo ${USR} \
-    && echo 'zhoukewei:123456' | chpasswd
+    && echo 'zhoukewei9700:Zkw0907genius' | chpasswd
 
 USER ${USR}
 
